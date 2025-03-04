@@ -1,0 +1,98 @@
+!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title> CSS Card Design</title>
+    <style>
+        body {
+            background-color: grey;
+        }
+
+        .card {
+            background: white;
+            width: 272px;
+            height: 470px;
+            border-radius: 7px;
+
+        }
+
+        .image {
+            padding: 11px;
+        }
+
+        .image img {
+            border-radius: 7px;
+        }
+
+        .context {
+            padding: 13px;
+        }
+
+        .context p{
+            font-size: 15px;
+           color: grey;
+        }
+        
+        .capsule{
+            padding: 0 34px 0 14px;
+        }
+
+        .capsule span{
+            border: 1px solid black;
+            padding: 4px;
+            border-radius: 7px;
+        }
+
+        .button {
+            text-align: center;
+            
+        }
+        .button button{
+            padding: 0px 4px;
+            border-radius: 3px;
+            background-color: rgb(182, 207, 223);
+        }
+    
+    
+
+
+
+    </style>
+</head>
+
+<body>
+    <div class="card">
+
+        <div class="image">
+            <img width="245px"
+                src="https://static8.depositphotos.com/1035224/877/i/380/depositphotos_8775274-stock-photo-the-man-in-a-boat.jpg"
+                alt="">
+
+
+        </div>
+        <div class="capsule">
+            <span>Sunset</span>
+            <span>Fishing</span>
+        </div>
+
+        
+
+        <div class="context">
+            <h2>Heena</h2>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Possimus atque sequi totam. Ullam, quod tempora?
+                Ea incidunt architecto perferendis fugit voluptates, quam ipsum dolor accusamus facilis molestiae,
+                tenetur reiciendis natus!</p>
+        </div>
+
+        <div class="button">
+            <button>Read More</button>
+        </div>
+
+
+    </div>
+
+</body>
+
+</html>
