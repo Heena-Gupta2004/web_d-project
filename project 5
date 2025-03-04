@@ -1,0 +1,165 @@
+#index.html
+!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>To-Do List</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <div class="todo-container">
+        <h1>My To-Do List</h1>
+        <input type="text" id="task-input" class="task-input" placeholder="Enter a task" />
+        <button id="add-task-btn" class="add-task-btn">Add Task</button>
+        <ul id="task-list" class="task-list"></ul>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
+
+
+#style.css
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f4f4f4;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+}
+
+.todo-container {
+    background-color: #fff;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+    width: 100%;
+    max-width: 400px;
+}
+
+h1 {
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+.task-input {
+    width: 100%;
+    padding: 10px;
+    font-size: 1rem;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+    margin-bottom: 10px;
+}
+
+.add-task-btn {
+    width: 100%;
+    padding: 10px;
+    background-color: #4CAF50;
+    color: #fff;
+    font-size: 1rem;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+.add-task-btn:hover {
+    background-color: #45a049;
+}
+
+.task-list {
+    list-style: none;
+    padding: 0;
+}
+
+.task-item {
+    background-color: #f9f9f9;
+    padding: 10px;
+    margin: 5px 0;
+    border-radius: 5px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.task-item.completed {
+    text-decoration: line-through;
+    background-color: #d3ffd3;
+}
+
+.task-btn {
+    background-color: #ff6347;
+    color: #fff;
+    border: none;
+    padding: 5px;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+.task-btn:hover {
+    background-color: #f44336;
+}
+
+
+#script.js
+// Get references to the input, button, and task list
+const taskInput = document.getElementById('task-input');
+const addTaskBtn = document.getElementById('add-task-btn');
+const taskList = document.getElementById('task-list');
+
+// Add task to the list when the button is clicked
+addTaskBtn.addEventListener('click', addTask);
+
+// Function to create a new task
+function addTask() {
+    const taskText = taskInput.value.trim();
+
+    if (taskText === "") {
+        return; // Don't add an empty task
+    }
+
+    const taskItem = document.createElement('li');
+    taskItem.classList.add('task-item');
+
+    const taskTextElement = document.createElement('span');
+    taskTextElement.classList.add('task-text');
+    taskTextElement.textContent = taskText;
+
+    const deleteBtn = document.createElement('button');
+    deleteBtn.classList.add('task-btn');
+    deleteBtn.textContent = "Delete";
+    deleteBtn.addEventListener('click', deleteTask);
+
+    const toggleBtn = document.createElement('button');
+    toggleBtn.classList.add('task-btn');
+    toggleBtn.textContent = "Complete";
+    toggleBtn.addEventListener('click', toggleComplete);
+
+    taskItem.appendChild(taskTextElement);
+    taskItem.appendChild(toggleBtn);
+    taskItem.appendChild(deleteBtn);
+
+    taskList.appendChild(taskItem);
+
+    taskInput.value = ""; // Clear the input after adding a task
+}
+
+// Function to delete a task
+function deleteTask(event) {
+    const taskItem = event.target.parentElement;
+    taskList.removeChild(taskItem);
+}
+
+// Function to mark a task as completed
+function toggleComplete(event) {
+    const taskItem = event.target.parentElement;
+    taskItem.classList.toggle('completed');
+}
+
