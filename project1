@@ -1,0 +1,107 @@
+!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>My Portfolio</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <header>
+        <div class="container">
+            <h1>My Portfolio</h1>
+            <nav>
+                <ul>
+                    <li><a href="about">About</a></li>
+                    <li><a href="schooling">Schooling</a></li>
+                    <li><a href="current">Current Work</a></li>
+                    <li><a href="interests">Interests</a></li>
+                    <li><a href="activities">Activities</a></li>
+                    <li><a href="projects">Projects</a></li>
+                    <li><a href="contact">Contact</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+
+    <section id="about" class="section">
+        <div class="container">
+            <h2>About Me</h2>
+            <p>Hi, I'm Heena Kumari, a passionate and driven individual focused on my expertise or career focus . I thrive on learning new skills and working on projects that make a difference.</p>
+        </div>
+    </section>
+
+    <section id="schooling" class="section">
+        <div class="container">
+            <h2>Schooling</h2>
+            <ul>
+                <li><strong>High School:</strong> Rashtriya Sr. Sec. School, 2022 </li>
+                <li><strong>College:</strong> Anand International Colloge Of Engineering , B.Tech and Currently I am in 3rd semester now</li>
+            </ul>
+        </div>
+    </section>
+
+    <section id="current" class="section">
+        <div class="container">
+            <h2>Current Work</h2>
+            <p>I am currently engaged in studies and learning new things . My primary focus is on my goals or  work].</p>
+        </div>
+    </section>
+
+    <section id="interests" class="section">
+        <div class="container">
+            <h2>Interests</h2>
+            <ul>
+                <li>Technology and Innovation</li>
+                <li>Exploring the nature </li>
+                <li>Playing Badminton</li>
+                <li>Traveling and experiencing new cultures</li>
+                <li>Perform drama</li>
+            </ul>
+        </div>
+    </section>
+
+    <section id="activities" class="section">
+        <div class="container">
+            <h2>Activities</h2>
+            <ul>
+                <li>Volunteering in community development programs</li>
+                <li>Participating in hackathons</li>
+                <li>Mentoring juniors in programming , studies</li>
+            </ul>
+        </div>
+    </section>
+
+    <section id="projects" class="section">
+        <div class="container">
+            <h2>Projects</h2>
+            <div class="project-list">
+                <div class="project">
+                    <h3>Project 1: Disaster Management System</h3>
+                    <p>A system designed to assist during disasters by providing optimized routing and resource allocation. Built using Python, Google Maps API, and machine learning.</p>
+                </div>
+            
+            </div>
+        </div>
+    </section>
+
+    <section id="contact" class="section">
+        <div class="container">
+            <h2>Contact</h2>
+            <ul>
+                <li><strong>Email:</strong>heenakumari9551@gmail.com</li>
+                <li><strong>Phone:</strong> 6377383670</li>
+                <li><strong>LinkedIn:</strong> <a href="#">https://www.Linkedin.com/in/heena-kumari-1664302a3</a></li>
+                
+            </ul>
+        </div>
+    </section>
+
+    <footer>
+        <div class="container">
+            <p>&copy; 2024 <div Heena kumari=""></div>. All rights reserved.</p>
+        </div>
+    </footer>
+</body>
+</html>
+
