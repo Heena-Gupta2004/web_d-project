@@ -1,0 +1,85 @@
+# index.html
+!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <main>
+        <div class="main">
+            <nav>
+                <span><img width="53" src="netflix image logo.jpg" alt=""></span>
+                <div>
+                    <button>English</button>
+                    <button>Sign in</button>
+                </div>
+            </nav>
+          <div class="box">
+          </div> 
+                
+            <div class="hero">
+                <span>Enjoy big movies, hit series and more from Rs 149.</span>
+                <span> Join today, Cancel anytime.</span>
+
+                <span>Ready to watch? Enter your email to create or restart your membership.</span>
+            
+            </div>
+        </div>
+    </main>
+</body> 
+</html>
+
+
+#style.css
+@import url('https://fonts.googleapis.com/css2?family=Martel+Sans:wght@600&family=Poppins:wght@300&display=swap');
+*{
+    padding: 0;
+    margin: 0;
+    font-family: 'Poppins', sans-serif;
+}
+
+main{
+    background-image: url(background\ image\ of\ netflix.webp);
+    background-position: center;
+    background-size: 100vw;
+    background-repeat: no-repeat;
+    height: 80vh;
+    position: relative;
+}
+
+.main .box{
+    height: 80vh;
+    width: 100%;
+    opacity: 0.44;
+    position: absolute ;
+    top: 0 ;
+    background-color: black;
+
+}
+
+nav{
+    max-width: 80vw;
+    margin: auto;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    height: 62px;
+}
+
+nav img{
+    width: 114px;
+    position: relative;
+    z-index: 10;
+}
+
+nav button{
+    position: relative;
+    z-index: 10;
+    /* margin-left: 65vw;
+    display: flex;
+    justify-content: center*/
+    
+}
