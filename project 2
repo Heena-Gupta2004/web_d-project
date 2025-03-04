@@ -1,0 +1,77 @@
+!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+
+    <style>
+        .parent
+        {
+            background-color: green;
+            width:200px;
+            height: 300px;
+            border-radius: 12px;
+            margin:50px;            
+        }
+        .title{
+            text-align: center;
+            color:white;
+            background-color: rgb(89, 87, 87);
+            font-family: calibri;
+            padding:10px;
+            font-size: 22px;
+            border-radius:inherit;
+        }
+        img{
+            width:100%;
+            border-radius: 50%;
+        }
+        .qty-btn{
+            background-color: transparent;
+            border: none;
+            font-size:18px;
+        }
+        .plus{
+            color:greenyellow;
+            padding-left: 15%;
+        }
+        .minus{
+            color:orange;
+            padding-right: 12px;
+        }
+        .text{
+            padding-left: 35px;
+            width: 11px;
+            padding-right: 27%;
+            
+        }
+        .basket{
+           background-color: yellow; 
+           border-color:3px violet black;
+           padding-right: 47%;
+           height: 27px;
+           margin: 11px  51px;
+           width: 12%;
+           border-radius: 9px;
+           font-size: small;  
+        }
+    </style>
+</head>    
+<body>
+
+    <div class="parent">
+        <h3 class="title">Black Formal</h3>
+
+        <img src="shoe1.jpg" alt="">
+
+        <button class="qty-btn plus">+</button>
+        <input type class="text" >
+        <button class="qty-btn minus">-</button>
+        <button class="basket">
+            <h7> Addtocart</h7>
+        </button>
+
+    </div>
+</body>
+</html>
